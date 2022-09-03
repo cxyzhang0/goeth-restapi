@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	Handlers "github.com/LuisAcerv/goeth-api/handler"
+	Handlers "github.com/cxyzhang0/goeth-restapi/handler"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/gorilla/mux"
 )

@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "b060f8e1-7047-4d2f-b0c6-fe7b291bfbef",
+		"name": "goeth-restapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2282220"
+	},
+	"item": [
+		{
+			"name": "latest block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/eth/latest-block",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"eth",
+						"latest-block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get tx",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/eth/get-tx?hash=0xdb910ba7aae5159feebd0a7981370c0bd000f2dd477b8e692a704a65112337df",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"eth",
+						"get-tx"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "0xdb910ba7aae5159feebd0a7981370c0bd000f2dd477b8e692a704a65112337df"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/eth/get-balance?address=0x1Dc569Ed7132F9B3D0a0868FEC3dB69ac85B4ef0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"eth",
+						"get-balance"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "0x1Dc569Ed7132F9B3D0a0868FEC3dB69ac85B4ef0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer eth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"privKey\": \"3680b6180d52eb33c5512b94f70356bc20fd9b6da5294954a2e0710d56073c61\",\n    \"to\": \"0xa3B1E141ecE4bd50E4F927E1bF8DF73fbCA96A89\",\n    \"amount\": 1000000000000000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/eth/send-eth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"eth",
+						"send-eth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

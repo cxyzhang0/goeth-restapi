@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	Models "github.com/LuisAcerv/goeth-api/models"
-	Modules "github.com/LuisAcerv/goeth-api/modules"
+	Models "github.com/cxyzhang0/goeth-restapi/models"
+	Modules "github.com/cxyzhang0/goeth-restapi/modules"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/gorilla/mux"

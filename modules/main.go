@@ -7,7 +7,7 @@ import (
 	"log"
 	"math/big"
 
-	Models "github.com/LuisAcerv/goeth-api/models"
+	Models "github.com/cxyzhang0/goeth-restapi/models"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
